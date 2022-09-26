@@ -74,29 +74,19 @@ p.text {
         font-size: 40px;
     }
 
-    div.winOrReset {
-        width: 100%;
-        font-family: 'Bungee Spice', cursive;
-        text-shadow: 2px 2px;
-        font-size: 12px;
-        justify-content: space-around;
-        margin: 10px 0;
-    }
-
     div.wrapper {
         display: grid;
-        grid-template-columns: repeat(9, 1fr)
-        width: 100%;
+        grid-template-columns: repeat(9, 1fr);
     }
 
     div.wrapper>div {
-        height: 40px;
-        width: 40px;
+        height: 30px;
+        width: 30px;
         margin: 2px;
         border-radius: 10px;
     }
 
     p.text {
-        font-size: 35px;
+        font-size: 25px;
     }
 }
