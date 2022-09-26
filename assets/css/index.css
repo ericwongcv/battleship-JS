@@ -1,0 +1,41 @@
+/* Your code here */
+h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+div.winOrReset {
+    text-align: center;
+    margin: 10px 0;
+}
+
+div.wrapper {
+    display: grid;
+    border: none;
+    height: fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: auto;
+}
+
+div.wrapper > div {
+    display: flex;
+    height: 99px;
+    width: 99px;
+    margin: 5px;
+    border: 1px solid black;
+}
+
+button {
+    font-size: 15px;
+}
+
+p.winner {
+    font-size: 20px;
+}
+
+p.text {
+    font-size: 50px;
+    margin: auto;
+}
