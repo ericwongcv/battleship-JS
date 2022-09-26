@@ -1,10 +1,22 @@
 /* Your code here */
+body {
+    background-color: #a9d7f6;
+    font-family: 'Varela Round', sans-serif;
+    color: #639cd9;
+    text-shadow: 2px 2px black;
+}
+
 h1 {
-    font-size: 50px;
+    font-family: 'Bungee Spice', cursive;
+    text-shadow: 2px 2px;
+    font-size: 60px;
     text-align: center;
 }
 
 div.winOrReset {
+    font-family: 'Bungee Spice', cursive;
+    text-shadow: 2px 2px;
+    font-size: 12px;
     text-align: center;
     margin: 10px 0;
 }
@@ -19,16 +31,29 @@ div.wrapper {
     grid-template-rows: auto;
 }
 
-div.wrapper > div {
+div.wrapper>div {
     display: flex;
     height: 99px;
     width: 99px;
     margin: 5px;
     border: 1px solid black;
+    border-radius: 15px;
+    background-color: #8fb1e9;
 }
 
 button {
-    font-size: 15px;
+    background-color: #f96d6d;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 150px;
+    height: 50px;
+    margin-bottom: 30px;
+}
+
+button:hover {
+    color: white;
+    background-color: #b84d69;
+    cursor: pointer;
 }
 
 p.winner {
@@ -38,4 +63,40 @@ p.winner {
 p.text {
     font-size: 50px;
     margin: auto;
+}
+
+@media only screen and (max-width: 1200px) {
+    body {
+        text-shadow: 1px 1px black;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    div.winOrReset {
+        width: 100%;
+        font-family: 'Bungee Spice', cursive;
+        text-shadow: 2px 2px;
+        font-size: 12px;
+        justify-content: space-around;
+        margin: 10px 0;
+    }
+
+    div.wrapper {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr)
+        width: 100%;
+    }
+
+    div.wrapper>div {
+        height: 40px;
+        width: 40px;
+        margin: 2px;
+        border-radius: 10px;
+    }
+
+    p.text {
+        font-size: 35px;
+    }
 }

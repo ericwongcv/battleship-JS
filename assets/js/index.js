@@ -4,7 +4,7 @@ let board = new Board(); // creates a new game board
 
 // Examine the grid of the game board in the browser console.
 // Create the UI of the game using HTML elements based on this grid.
-console.log(board.grid);
+// console.log(board.grid);
 
 // Your code here
 const makeDiv = (className) => {
@@ -60,7 +60,7 @@ const reset = e => {
 
     let blocks = document.body.getElementsByClassName("block");
     for (let i = 0; i < blocks.length; i++) {
-        blocks[i].style.backgroundColor = "transparent";
+        blocks[i].style.backgroundColor = "#8fb1e9";
     }
 
     let p = document.body.getElementsByClassName("text");
@@ -80,15 +80,16 @@ const clicks = e => {
             if (hit) {
                 const p = makeP("text");
                 p.innerText = hit;
-                target.appendChild(p);
-                target.style.backgroundColor = "green";
+                target.children.length === 0 ? target.appendChild(p) : target.children[0].innerText = hit;
+                target.style.backgroundColor = "#7dd87d";
             } else {
-                target.style.backgroundColor = "red";                
+                target.style.backgroundColor = "#f96d6d";
             };
         };
         if (board.numRemaining === 0) {
             document.removeEventListener('click', clicks);
             winnerMsg.style.visibility = "visible";
+            winnerMsg.innerText = "You Win!!";
         };
     }
 }

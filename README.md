@@ -1,3 +1,3 @@
 # Battleship JavaScript
 
-Battleship game build using Javascript, Node.js, HTTP module, and DOM Manipulation
+Battleship game built using Javascript, Node.js, HTTP module, and DOM Manipulation
