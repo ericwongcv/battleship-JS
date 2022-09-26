@@ -62,7 +62,7 @@ const server = http.createServer((req, res) => {
     res.end();
   });
 });
-// Set the port to 5000
-const port = 5000;
+// Set the port to 5000 or assigned port
+const port = process.env.PORT || 5000
 // Tell the port to listen for requests on localhost:5000
 server.listen(port, () => console.log("Server is running on port", port));
