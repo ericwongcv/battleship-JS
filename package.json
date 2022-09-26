@@ -1,0 +1,19 @@
+{
+  "name": "battleship-js",
+  "version": "1.0.0",
+  "description": "Battleship game build using Javascript, Node.js, HTTP module, and DOM Manipulation",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericwongcv/battleship-JS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ericwongcv/battleship-JS/issues"
+  },
+  "homepage": "https://github.com/ericwongcv/battleship-JS#readme"
+}
