@@ -1,9 +1,14 @@
 {
   "name": "battleship-js",
   "version": "1.0.0",
+  "engines": {
+    "node": "16.x"
+  },
   "description": "Battleship game build using Javascript, Node.js, HTTP module, and DOM Manipulation",
   "main": "app.js",
   "scripts": {
+    "web": "node app.js",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
