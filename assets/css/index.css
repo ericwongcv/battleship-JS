@@ -70,20 +70,10 @@ p.text {
     margin: auto;
 }
 
-@media only screen and (max-height: 1080px) {
+@media only screen and (max-width: 1920px) {
     div.wrapper>div {
-        height: 70px;
-        width: 70px;
-        margin: 2px;
-        border-radius: 10px;
-        text-shadow: 1px 2px black;
-    }
-}
-
-@media only screen and (max-width: 1200px) {
-    div.wrapper>div {
-        height: 70px;
-        width: 70px;
+        height: 50px;
+        width: 50px;
         margin: 2px;
         border-radius: 10px;
         text-shadow: 1px 2px black;
