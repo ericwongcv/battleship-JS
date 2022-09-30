@@ -39,6 +39,7 @@ div.wrapper>div {
     border: 1px solid black;
     border-radius: 15px;
     background-color: #8fb1e9;
+    touch-action: manipulation;
 }
 
 button {
@@ -93,3 +94,5 @@ p.text {
         font-size: 25px;
     }
 }
+
+webki
