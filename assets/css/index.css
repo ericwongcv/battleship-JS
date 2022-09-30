@@ -39,7 +39,11 @@ div.wrapper>div {
     border: 1px solid black;
     border-radius: 15px;
     background-color: #8fb1e9;
-    touch-action: manipulation;
+}
+
+div.wrapper>div:hover {
+    background-color: #a0bce7;
+    cursor: pointer;
 }
 
 button {
@@ -76,6 +80,7 @@ p.text {
         width: 70px;
         margin: 2px;
         border-radius: 10px;
+        text-shadow: 1px 2px black;
     }
 
     p.text {
@@ -94,5 +99,3 @@ p.text {
         font-size: 25px;
     }
 }
-
-webki
